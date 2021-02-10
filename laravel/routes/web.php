@@ -20,3 +20,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/send', 'HomeController@sendMail')->name('send-mail');
+Route::get('/api/test', 'ApiController@testApi')->name('api-test');

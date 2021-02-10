@@ -8,7 +8,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>Hello</h1>
+        <h1>Hello {{Auth::user()-> name}}</h1>
+        <h2 style="color: red">{{$testString}}</h2>
     </div>
 </body>
 </html>

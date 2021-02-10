@@ -11,9 +11,11 @@ class TestMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public function __construct()
+    public $testString;
+
+    public function __construct(String $testString)    //mettere String forza il fatto che sia una stringa, se passo altro si rompe
     {
-    
+        $this-> testString= $testString;
     }
 
     public function build()
